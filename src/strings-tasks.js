@@ -390,7 +390,7 @@ function reverseWords(str) {
  *   invertCase('12345') => '12345'
  */
 function invertCase(str) {
-  return str.replace(/[a-zA-Z]/g, function (char) {
+  return str.replace(/[a-zA-Z]/g, function invert(char) {
     return char === char.toUpperCase()
       ? char.toLowerCase()
       : char.toUpperCase();
